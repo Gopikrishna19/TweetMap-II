@@ -1,0 +1,1 @@
+<?php return include "Server/aws-config.php"; ?>

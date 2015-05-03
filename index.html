@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Service Check</title>
+
+        <script src="http://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
+        <script src="js/jquery.js"></script>
+		<script src="js/map.js"></script>
+        <script src="js/socket.js"></script>
+        <script src="js/main.js"></script>
+
+        <link href="css/master.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="flex">
+            <div class="maps">
+                <div class="box">
+                    <div class="header">
+                        <span class="title">Positive Tweets</span>
+                        <span class="max"></span>
+                    </div>
+                    <div class="map" id="posMap"></div>
+                </div>
+                <div class="box">
+                    <div class="header">
+                        <span class="title">Negative Tweets</span>
+                        <span class="max"></span>
+                    </div>
+                    <div class="map" id="negMap"></div>
+                </div>
+                <div class="box">
+                    <div class="header">
+                        <span class="title">Heatmap</span>
+                        <span class="max"></span>
+                    </div>
+                    <div class="map" id="heatMap"></div>
+                </div>
+                <div class="box">
+                    <div class="header">
+                        <span class="title">Tweet Locations</span>
+                        <span class="max"></span>
+                    </div>
+                    <div class="map" id="textMap"></div>
+                </div>
+            </div>
+            <div class="info">
+                <button class="stop">Stop</button>
+                <div>
+                    Overall Sentiment:
+                    <div class="scale">
+                        <div class="meter"></div>
+                        <div class="point"></div>
+                    </div>
+                    <div class="sent">0.00</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
